@@ -108,8 +108,11 @@ you.are <- function(name){
   result <- weight.for.height(height)
   if (weight>result){
     cat(name,'의 몸무게는 0.9를 곱한 결과 초과입니다')
+  }else if(weight==result){
+    cat(name,'의 몸무게는 0.9를 곱한 결과 정상입니다')
   }else{
     cat(name,'의 몸무게는 0.9를 곱한 결과 미만입니다')
   }
 }
 
+you.are('홍')
